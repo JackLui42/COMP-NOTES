@@ -114,7 +114,7 @@
 * Need a formal notation for tokens
     * e.g. `1.0`, `.1`, `1.1e2` are all valid floats but all need a different pattern
 
-![regular_expression_example](/imgs/regularExpExample.png)
+![regular_expression_example](../imgs/regularExpExample.png)
 
 ### Finite State Machines for Integers and Reals
-![finite_state_example](/imgs/finiteState.png)
+![finite_state_example](../imgs/finiteState.png)
