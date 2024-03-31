@@ -64,7 +64,7 @@ int main() {
 
 ### Type Coercions
 * There are two types of operations at the hardware level on say, _
-    * integer additions hwne both operands are integers
+    * integer additions when both operands are integers
     * floating point addition when both operands are reals
 * **Type coercion:** the compiler implicitly converts int to float whenever necessary, when an expression is evaluated
 * Each overloaded operator is associated two non-overloaded operator: one for integer operation and the other for floating-point operation
