@@ -45,7 +45,7 @@
 * A transition system is a pair of $(S, \rightarrow)$ where:
     * $S$ is a set (of states), and
     * $\rightarrow \ \subseteq \ S \times S$ is a (transition) relation
-    If $(s, s') \ \in \ \rightarrow$ we write $s \rightarrow s'$ 
+    If $(s, s') \ $\in \ \rightarrow$ we write $s \rightarrow s'$ 
     * $S$ may have a designated start state, $s_0 \: \in \:S$
     * $S$ may have a designated final state, $F \subseteq S$
     * The transitions may be labbelled by elements of a set $L$:
@@ -78,7 +78,7 @@
 * We need to find a property $\phi$ charaterising (possibly overapproximating) the reachable states
 * Show that the bad states does not satisfy $\phi$
 * Show that $\phi$ is preserved by the transition relation
-    $$\text{If} \ \ \phi (s') \ \ \text{and} \ \ s\rightarrow s' \ \text{then} \ \phi (s')$$
+    $$\text{If} \ \ \phi (s') \ \ \text{and} \ \ s\rightarrow s' \ \ \text{then} \ \phi (s')$$
 * This property $\phi$ is called an invariant
 * The Invariant Principle: If a preserved invariant hold at a state $s$ then, it holds for all states reachable from $s$
 
