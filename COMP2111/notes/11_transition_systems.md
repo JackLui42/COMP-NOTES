@@ -50,7 +50,7 @@
     * $S$ may have a designated final state, $F \subseteq S$
     * The transitions may be labbelled by elements of a set $L$:
         * $\rightarrow  \subseteq  S \times L \times S$ 
-        * $(s, a, s') \in  \rightarrow $ is written as $\xrightarrow[]{\text{a}}$
+        * $(s, a, s') \in  \rightarrow$ is written as $\xrightarrow[]{\text{a}}$
 
     * If $\rightarrow$ is a partial function we say that the system is deterministic, otherwise it is non-deterministic
 
