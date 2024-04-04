@@ -45,7 +45,7 @@
 * A transition system is a pair of $(S, \rightarrow)$ where:
     * $S$ is a set (of states), and
     * $\rightarrow \ \subseteq \ S \times S$ is a (transition) relation
-    If $(s, s') \ $\in \ \rightarrow$ we write $s \rightarrow s'$ 
+    If $(s, s') \ \in \ \rightarrow$ we write $s \rightarrow s'$ 
     * $S$ may have a designated start state, $s_0 \: \in \:S$
     * $S$ may have a designated final state, $F \subseteq S$
     * The transitions may be labbelled by elements of a set $L$:
