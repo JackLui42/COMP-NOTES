@@ -177,7 +177,7 @@ It has many applications in Computer Science
 
 ### Inductive definition
 Given a finite set $\sum$, a regular expression over $\sum$ is defined recursively as follows
-* $\empty$ is a regular expression
+* ∅ is a regular expression
 * $\epsilon$ is a regular expression
 * $a$ is a regular expression for all $a \in \sum$
 * If $E_1$ and $E_2$ are regular expressions then $E_1 E_2$ is also an regular expression
@@ -188,7 +188,7 @@ Parentheses are used to disambiguate regexps, though * binds tighter than concat
 
 ### Language of a Regular Expression
 Formally given a regular expression, $E$, over $\sum$, we define $L(E) \subseteq {\sum}^*$ recursively as follows:
-* If $E = \empty$ then $L(E) = \empty$
+* If $E = ∅$ then $L(E) = ∅$
 * If $E = \epsilon$ then $L(E) = {\lambda}$
 * If $E = a$ where $a \in \sum$ then $L(E) = {a}$
 * If $E = E_1 E_2$, then $L(E) = $L(E_1) \cdot L(E_2)$
