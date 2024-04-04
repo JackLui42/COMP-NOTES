@@ -30,7 +30,7 @@ Formally, a deterministic finite automaton (DFA) is a tuple of $Q, \sum, \delta,
 
 ### Language of a DFA
 
-A DFA accepts a sequence of symbols from $\sum$ - i.e. the elements of $\sum^*$
+A DFA accepts a sequence of symbols from $\sum$ - i.e. the elements of ${\sum}^*$
 
 Informally: A word defines a run in the DFA and the word is accepted if the run ends in a final state
 
