@@ -41,12 +41,12 @@ Steps:
     * Based on the current state and current input symbol, transition to the appriorate state determined by $\delta$
     * Move to the next symbol in $w$
 
-For a DFA $A = (Q, \sum, \delta, q_0, F)$, the language of $A$, $L(A)$, is the set of words from $\sum^*$ which are accepted by $A$.
+For a DFA $A = (Q, \sum, \delta, q_0, F)$, the language of $A$, $L(A)$, is the set of words from ${\sum}^*$ which are accepted by $A$.
 
-A language $L \subseteq \sum^*$ is regular if there is some DFA $A$ such that $L = L(A)$
+A language $L \subseteq {\sum}^*$ is regular if there is some DFA $A$ such that $L = L(A)$
 
 ### Language of a DFA: Formally
-Given a DFA $A = (Q, \sum, \delta, q_0, F)$ we define $L_A : Q \rightarrow \sum^*$ inductively as follows: 
+Given a DFA $A = (Q, \sum, \delta, q_0, F)$ we define $L_A : Q \rightarrow {\sum}^*$ inductively as follows: 
 * If $g \in F$ then $\lambda \in L_A(q)$
 * If $q \overset{a}{\rightarrow} q'$ and $w \in L_A(q')$ then $aw \in L_A(q)$
 
@@ -68,17 +68,17 @@ Formaly, a non-deterministic finite automaton (NFA) is a tuple $(Q, \sum, \delta
 * $F \subseteq Q$ is the set of final/accepting states
 
 ### Language of an NFA
-An NFA accepts a sequence of symbols from $\sum$ - i.e. elements of $\sum^*$
+An NFA accepts a sequence of symbols from $\sum$ - i.e. elements of ${\sum}^*$
 
 Informally: A word defines several runs in the NFA and the word is accepted if at least one run ends in a final state
 
 1. Runs can end prematurely (these do not count)
 2. An NFA will always "choose wisely"
 
-For an NFA $A = (Q, \sum, \delta, q_0, F)$, the language of $A$, $L(A)$, is the set of words from $\sum^*$ which are accepted by $A$.
+For an NFA $A = (Q, \sum, \delta, q_0, F)$, the language of $A$, $L(A)$, is the set of words from ${\sum}^*$ which are accepted by $A$.
 
 ### Language of a NFA: Formally
-Given a NFA $A = (Q, \sum, \delta, q_0, F)$ we define $L_A : Q \rightarrow \sum^*$ inductively as follows: 
+Given a NFA $A = (Q, \sum, \delta, q_0, F)$ we define $L_A : Q \rightarrow {\sum}^*$ inductively as follows: 
 * If $g \in F$ then $\lambda \in L_A(q)$
 * If $q \overset{a}{\rightarrow} q'$ and $w \in L_A(q')$ then $aw \in L_A(q)$
 * If $q \overset{\epsilon}{\rightarrow} q'$ and $w \in L_A(q)$ then $w \in L_A(q)$
@@ -104,15 +104,15 @@ This can be proven using a "simple" counting argument: there are uncountably man
 ### Complementation
 Theorem:
 
-If $L$ is a regular language, then $L^c = \sum^* - L$ is a regular language
+If $L$ is a regular language, then $L^c = {\sum}^* - L$ is a regular language
 
 Proof:
 * Let $A = (Q, \sum, \delta, q_0, F)$ be a DFA such that $L(A) = L$
 * Consider $A' = (Q, \sum, \delta, q_0, Q - F)$
-* For any word $w \in \sum^*$ the corresponding run in $A$ is unique, so:
+* For any word $w \in {\sum}^*$ the corresponding run in $A$ is unique, so:
     * If $w \in L(A)$ then $w \notin L(A')$, and
     * IF $w \notin L(A)$ then $w \in L(A')$,
-* Therefore $L(A') = \sum^* - L(A) = L^c$
+* Therefore $L(A') = {\sum}^* - L(A) = L^c$
 
 ### Union
 Theorem:
@@ -187,7 +187,7 @@ Given a finite set $\sum$, a regular expression over $\sum$ is defined recursive
 Parentheses are used to disambiguate regexps, though * binds tighter than concatenation, which binds tighter than +.
 
 ### Language of a Regular Expression
-Formally given a regular expression, $E$, over $\sum$, we define $L(E) \subseteq \sum^*$ recursively as follows:
+Formally given a regular expression, $E$, over $\sum$, we define $L(E) \subseteq {\sum}^*$ recursively as follows:
 * If $E = \empty$ then $L(E) = \empty$
 * If $E = \epsilon$ then $L(E) = {\lambda}$
 * If $E = a$ where $a \in \sum$ then $L(E) = {a}$
